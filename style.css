@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+
+body {
+
+    font-size: 14px;
+    line-height: 22px;
+    color: #3f4126;
+    background-color: rgb(176, 242, 220);
+}
+
+
+.resume {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.aboutme .title .regular {
+    margin-top: 20px;
+}
+
+
+.resume_left {
+    width: 280px;
+    background-color: blueviolet;
+    color: #b1eaff;
+}
+
+.resume_left .bold {
+    color: white;
+}
+
+.resume_right .bold {
+    color: blueviolet;
+}
+
+img {
+    width: 280px;
+}
+
+
+.info,
+.skills {
+    padding: 0 25px;
+}
+
+
+.info ul {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    margin-bottom: 20px;
+}
+
+.work .docs {
+    margin-bottom: 20px;
+}
+
+.work .date {
+    margin-bottom: 10px;
+}
+
+.education .docs {
+    margin-bottom: 20px;
+}
+
+.education .date {
+    margin-bottom: 10px;
+}
+
+.box {
+    border-bottom: 2px solid #d6aeeb;
+    /* خط زیر هر بخش */
+    padding-bottom: 15px;
+    /* فضای داخلی در زیر خط */
+    margin-top: 20px;
+    /* فاصله بالای هر بخش */
+}
+
+.resume_left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #7521a6;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.skills ul li {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill_name {
+    width: 25%;
+    flex-wrap: wrap;
+}
+
+.skill_progress {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #fff;
+    position: relative;
+}
+
+.skill_per {
+    width: 15%;
+}
+
+.skill_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #daa1ef;
+}
+
+.resume .info ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.resume_right {
+    width: 520%;
+    padding: 0 25px;
+    background-color: white;
+}
+
+
+
+.favorites ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+.favorites ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #7521a6;
+    border-radius: 50%;
+    position: relative;
+    color: #7521a6;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* دایره‌ها بالای خط قرار می‌گیرند */
+}
+
+.favorites ul li i {
+    font-size: 30px;
+    color: #7521a6;
+}
+
+
+.favorites ul:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* وسط آیکون‌ها */
+    left: 10px;
+    /* فاصله شروع خط از سمت چپ */
+    right: 90px;
+    /* خط تا قبل از آخرین آیکون کشیده می‌شود */
+    height: 2px;
+    background-color: #7521a6;
+    /* رنگ خط */
+    z-index: 0;
+    /* خط زیر آیکون‌ها قرار می‌گیرد */
+}
+
+/* آخریش که موزیک هست خط نداره */
+.favorites ul li:last-child:before {
+    display: none;
+}
