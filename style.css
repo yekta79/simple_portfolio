@@ -39,24 +39,34 @@ body {
     margin-bottom: 20px;
 }
 
-.aboutme .title .regular {
+
+.docs {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Line between elements */
+.box {
+    border-bottom: 2px solid #d6aeeb;
+    padding-bottom: 15px;
     margin-top: 20px;
 }
 
 
+
+
+/* resume left */
 .resume_left {
     width: 280px;
     background-color: blueviolet;
     color: #b1eaff;
 }
 
+
 .resume_left .bold {
     color: white;
 }
 
-.resume_right .bold {
-    color: blueviolet;
-}
 
 img {
     width: 280px;
@@ -73,36 +83,8 @@ img {
     margin-bottom: 20px;
 }
 
-.skills ul {
-    margin-bottom: 20px;
-}
 
-.work .docs {
-    margin-bottom: 20px;
-}
-
-.work .date {
-    margin-bottom: 10px;
-}
-
-.education .docs {
-    margin-bottom: 20px;
-}
-
-.education .date {
-    margin-bottom: 10px;
-}
-
-.box {
-    border-bottom: 2px solid #d6aeeb;
-    /* خط زیر هر بخش */
-    padding-bottom: 15px;
-    /* فضای داخلی در زیر خط */
-    margin-top: 20px;
-    /* فاصله بالای هر بخش */
-}
-
-.resume_left ul li .icon {
+.resume_left .info ul li .icon {
     width: 35px;
     height: 35px;
     background: #fff;
@@ -111,6 +93,10 @@ img {
     margin-right: 15px;
     font-size: 16px;
     position: relative;
+}
+
+.skills ul {
+    margin-bottom: 20px;
 }
 
 .skills ul li {
@@ -126,9 +112,9 @@ img {
 }
 
 .skill_progress {
-    width: 60%;
+    width: 40%;
     margin: 0 5px;
-    height: 5px;
+    height: 6px;
     background: #fff;
     position: relative;
 }
@@ -153,12 +139,21 @@ img {
 }
 
 
+/* resume right */
 .resume_right {
     width: 520%;
     padding: 0 25px;
     background-color: white;
 }
 
+.aboutme .title .regular {
+    margin-top: 20px;
+}
+
+
+.resume_right .bold {
+    color: blueviolet;
+}
 
 
 .favorites ul {
@@ -167,7 +162,6 @@ img {
     justify-content: space-between;
     position: relative;
 }
-
 
 
 .favorites ul li {
@@ -181,33 +175,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
-    /* دایره‌ها بالای خط قرار می‌گیرند */
-}
-
-.favorites ul li i {
     font-size: 30px;
-    color: #7521a6;
 }
 
-
+/* Line between icons */
 .favorites ul:before {
     content: "";
     position: absolute;
     top: 50%;
-    /* وسط آیکون‌ها */
     left: 10px;
-    /* فاصله شروع خط از سمت چپ */
     right: 90px;
-    /* خط تا قبل از آخرین آیکون کشیده می‌شود */
     height: 2px;
     background-color: #7521a6;
-    /* رنگ خط */
-    z-index: 0;
-    /* خط زیر آیکون‌ها قرار می‌گیرد */
 }
 
-/* آخریش که موزیک هست خط نداره */
 .favorites ul li:last-child:before {
     display: none;
 }
